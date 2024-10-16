@@ -137,28 +137,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
-// document.getElementById('registrationForm').addEventListener('submit', function(event) {
-//   event.preventDefault();
 
-//   let password = document.getElementById('inputPassword').value;
-//   let confirmPassword = document.getElementById('confirmPassword').value;
-
-//   if (password !== confirmPassword) {
-//       document.getElementById('errorMsg').textContent = 'Пароли не совпадают!';
-//       return;
-//   } else {
-//       document.getElementById('errorMsg').textContent = '';
-//   }
-
-//   let obj = {
-//       firstName: document.getElementById('firstName').value,
-//       lastName: document.getElementById('lastName').value,
-//       email: document.getElementById('email').value,
-//       password: password,
-//       gender: document.querySelector('input[name="gender"]:checked').value,
-//       birthDate: document.getElementById('birthDate').value,
-//       agreement: document.getElementById('agreementCheckbox').checked
-//   };
-
-//   document.getElementById('output').textContent = JSON.stringify(obj, null, 2);
-// });
