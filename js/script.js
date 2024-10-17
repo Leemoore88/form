@@ -44,6 +44,10 @@ const CONFIG = {
   agreementCheckbox: {
     required: "чтобы продолжить регистрацию, необходимо согласиться",
   },
+
+  choiseCountry: {
+    noChoise: "выберите страну",
+  },
 };
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -113,9 +117,24 @@ document.addEventListener("DOMContentLoaded", () => {
         ) {
           addError(key, validator.restriction);
         }
+        if (validator.noChoise) {
+          addError(key, validator.noChoise)
+        }
       }
     }
   }
+  const checkbox = document.getElementById('country-agreementCheckbox');
+  const select = document.getElementById('countrySelect');
+
+  
+  checkbox.addEventListener('change', function() {
+      if (this.checked) {
+          select.style.display = 'block';
+      } else {
+          select.style.display = 'none'; 
+      }
+  });
+
 
   submitBtn.addEventListener("click", (event) => {
     event.preventDefault();

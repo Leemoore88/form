@@ -112,8 +112,7 @@
                   required
                 />
                 <label class="form-check-label" for="nonBinary"
-                  >Небинарная трансгендерная ЛБГТЁКЛМН+ личность
-                  (асуждаем)</label
+                  >Другое</label
                 >
               </div>
             </div>
@@ -122,6 +121,39 @@
               <label for="birthDate">Дата рождения:</label>
               <input type="date" class="form-control" name="birthDate" required />
             </div>
+
+
+
+
+            <div class="form-check-country">
+              <input
+                  id="country-agreementCheckbox"
+                  class="form-check-input"
+                  type="checkbox"
+                  name="countryagreementCheckbox"
+                  required
+                 
+              />
+              <label class="form-check-label" for="country-agreementCheckbox">
+                 Выбор страны
+              </label>
+          </div>
+          <div id="errorMsg" class="text-danger mt-2"></div>
+          
+          <select id="countrySelect" class="form-select country-select" name="choiseCountry">
+              <option selected>Откройте это меню выбора</option>
+              <option value="1">Россия</option>
+              <option value="2">Белоруссия</option>
+              <option value="1">Казахстан</option>
+          </select>
+
+        
+
+ 
+
+
+
+
 
             <div class="form-check">
               <input
@@ -132,12 +164,13 @@
                 required
               />
               <label class="form-check-label" for="registration-agreementCheckbox"
-                >Я согласен(-сна) принять иудаизм</label
+                >Я согласен(-сна) принять условия</label
               >
             </div>
             <div id="errorMsg" class="text-danger mt-2"></div>
+            
 
-            <button type="submit" class="btn btn-primary">ГОЙДА</button>
+            <button type="submit" class="btn btn-primary">Отправить</button>
           </fieldset>
         </form>
       </div>
