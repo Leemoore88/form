@@ -117,7 +117,7 @@ document.addEventListener("DOMContentLoaded", () => {
         ) {
           addError(key, validator.restriction);
         }
-        if (validator.noSelected) {
+       if (validator.noSelected) {
           addError(key, validator.noSelected);
       }
         
