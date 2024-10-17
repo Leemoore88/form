@@ -45,9 +45,9 @@ const CONFIG = {
     required: "чтобы продолжить регистрацию, необходимо согласиться",
   },
 
-  choiseCountry: {
-    noChoise: "выберите страну",
-  },
+  countrySelect: {
+    noSelected: "Страна не выбрана",
+},
 };
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -117,9 +117,10 @@ document.addEventListener("DOMContentLoaded", () => {
         ) {
           addError(key, validator.restriction);
         }
-        if (validator.noChoise) {
-          addError(key, validator.noChoise)
-        }
+        if (validator.noSelected) {
+          addError(key, validator.noSelected);
+      }
+        
       }
     }
   }
